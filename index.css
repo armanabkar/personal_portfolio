@@ -34,8 +34,13 @@ h1 {
   font-family: var(--primaryFont);
   font-weight: 500;
   line-height: 1.2;
-  font-size: 2.1em;
+  font-size: 2em;
   margin: 1.1em 0 1rem;
+  color: var(--background);
+  background-color: var(--primary);
+  padding: 0.1em 0;
+  text-align: center;
+  border-radius: 1px;
 }
 p {
   font-size: 1.3rem;
@@ -52,7 +57,7 @@ p {
   position: relative;
   margin: 0 auto;
   max-width: 1400px;
-  padding: 0 2em 1em 2em;
+  padding: 0 1.25em 1em 1.25em;
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -68,7 +73,7 @@ a:hover {
 }
 .container {
   margin: 0 auto;
-  max-width: 57em;
+  max-width: 58em;
   width: 100%;
 }
 .prefix {
@@ -78,7 +83,7 @@ a:hover {
   letter-spacing: 0.03rem;
   transition: color linear 0.15s;
   transition: background-color 0.15s linear;
-  padding: 0.05em 0.1em;
+  padding: 0.075em 0.1em;
   border-radius: 1px;
 }
 .prefix:hover {
@@ -93,9 +98,14 @@ a:hover {
   justify-content: space-between;
   align-items: flex-end;
 }
+.social-media-icons {
+  text-align: center;
+  margin-top: 1em;
+}
 .social-media-link {
+  font-size: 1.25em;
   color: var(--primary);
-  margin-right: 0.45em;
+  margin: 0 0.2em;
 }
 .social-media-link:hover {
   color: var(--secondary);
@@ -118,7 +128,7 @@ footer {
   font-family: var(--primaryFont);
   margin: 0 auto;
   max-width: 1400px;
-  padding: 1em 2em;
+  padding: 0 2em 1em 2em;
   text-align: center;
   width: 100%;
   letter-spacing: 0.1rem;

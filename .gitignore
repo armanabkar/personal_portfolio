@@ -61,5 +61,5 @@ typings/
 .env
 
 # Parcel related files
-# dist/
+dist/
 .cache/
