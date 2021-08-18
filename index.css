@@ -35,12 +35,12 @@ h1 {
   font-weight: 500;
   line-height: 1.2;
   font-size: 2em;
-  margin: 1.1em 0 1rem;
   color: var(--background);
   background-color: var(--primary);
   padding: 0.1em 0;
   text-align: center;
   border-radius: 1px;
+  letter-spacing: 0.03rem;
 }
 p {
   font-size: 1.3rem;
@@ -81,14 +81,8 @@ a:hover {
   background-color: var(--primary);
   color: var(--background);
   letter-spacing: 0.03rem;
-  transition: color linear 0.15s;
-  transition: background-color 0.15s linear;
   padding: 0.075em 0.1em;
   border-radius: 1px;
-}
-.prefix:hover {
-  background-color: var(--background);
-  color: var(--primary);
 }
 .experience-description {
   font-size: 0.95em;
@@ -136,7 +130,7 @@ footer {
 }
 ::-moz-selection {
   color: var(--background);
-  background: var(--secondary);
+  background: var(--primary);
 }
 ::selection {
   color: var(--background);
