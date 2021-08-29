@@ -35,10 +35,14 @@ h1 {
   font-size: 2em;
   color: var(--background);
   background-color: var(--primary);
-  padding: 0.1em 0;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
   border-radius: 1px;
   letter-spacing: 0.03rem;
+  padding: 0.1em 0.2em;
+}
+svg {
+  width: 1em;
 }
 p {
   font-size: 1.3rem;
@@ -105,7 +109,7 @@ a:hover {
 .social-media-link:hover {
   color: var(--link);
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   body {
     font-size: 14px;
   }

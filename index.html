@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="description" content="Software Developer from Isfahan, Iran" />
+    <meta
+      name="description"
+      content="Software Developer from San Diego, California"
+    />
     <meta
       name="keywords"
       content="Arman Abkar, armanabkar, Software Engineer, Frontend Web Developer, iOS Developer"
@@ -20,10 +23,13 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
+      media="print"
     />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.min.css"
+      media="print"
+      onload="this.media='all'"
     />
     <link rel="icon" type="image/png" href="/favicon.png" />
   </head>
@@ -31,22 +37,35 @@
     <div class="layout">
       <div class="container">
         <!-- Header -->
-        <h1>Arman Abkar</h1>
+        <h1>
+          Arman Abkar
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            fill="currentColor"
+          >
+            <path
+              class="st0"
+              d="M25.6 377.6C11.5 377.6 0 366.1 0 352s11.5-25.6 25.6-25.6h268.8c25.6 0 51.2 51.2 38.4 51.2H25.6zm358.4 0c-14.1 0-25.6-11.5-25.6-25.6s11.5-25.6 25.6-25.6h102.4c14.1 0 25.6 11.5 25.6 25.6s-11.5 25.6-25.6 25.6H384zM272.2 32a25.56 25.56 0 0135-9.4 25.56 25.56 0 019.4 35L139.8 364.7a25.56 25.56 0 01-35 9.4 25.56 25.56 0 01-9.4-35L272.2 32zm-221 384c12.8-25.6 89.6-51.2 64-7.1-4.5 7.8-18.5 31.5-41.8 71.1a25.56 25.56 0 01-35 9.4 25.56 25.56 0 01-9.4-35L51.2 416zM182.6 57.6a25.65 25.65 0 019.4-35c12.3-7 27.9-2.8 35 9.4l44.6 77.5c7.1 12.3 2.8 27.9-9.4 35a25.51 25.51 0 01-34.9-9.4l-44.7-77.5zm99 179.2c-23-38.4 0-115.2 18.3-76.9l170.3 294.5c7 12.3 2.8 27.9-9.4 35-12.3 7-27.9 2.8-35-9.4L281.6 236.8z"
+            />
+          </svg>
+        </h1>
 
         <!-- Description -->
         <p>
           Avid <strong>Software Developer</strong> with a passion for continuous
-          learning and applying the cutting-edge technologies to work.
-          Specialized in Client-Side (Frontend) technologies with a strong
-          quality mindset in order to build performant, cross-platform and
-          scalable applications with high level of functionality and interactive
-          features and deliver them on time that will affect directly on
-          business growth and meet customers' expectations.
+          learning and applying cutting-edge technologies to work. Specialized
+          in Client-Side (Frontend) technologies with a strong quality mindset
+          to build performant, cross-platform, and scalable applications with a
+          high level of functionality and interactive features and deliver them
+          on time that will affect business growth and meet customers'
+          expectations.
         </p>
         <p>
-          When he is not working on computer, you can find him lifting weights
-          in gym, playing video games, watching movies and anime series or
-          reading books.
+          When he is not working on a computer, you can find him lifting weights
+          in a gym (because healthy minds live in healthy bodies), playing video
+          games, watching movies and anime series, or reading books about tech
+          and personal development.
         </p>
 
         <!-- Experiences -->
@@ -62,7 +81,8 @@
               rel="noopener noreferrer"
               >open-source projects</a
             >
-            by maintaining, fixing bugs, adding new features and writing tests.
+            by maintaining, fixing bugs, adding new features, and writing tests. </span
+          ><br /><span class="experience-description">
             Practiced on
             <a
               href="https://leetcode.com/armanabkar/"
@@ -104,13 +124,54 @@
           <span>- Swift, JavaScript, Objective-C, Dart, Python</span><br />
           <span
             >- UIKit, SwiftUI, React, Vue, Flutter, Node.js, Combine, Core Data,
-            XCTest</span
-          ><br />
-          <span>- MySQL, Firebase, Docker, CI/CD</span>
+            XCTest, Firebase, Docker, CI/CD</span
+          >
         </p>
 
         <!-- Projects -->
-        <!-- <p><span class="prefix">Projects:</span><br /></p> -->
+        <p>
+          <span class="prefix">Projects:</span><br />
+          <span
+            >- Food Ordering application for a pizza shop. Backend built with
+            Node.js.
+            <a
+              href="https://github.com/armanabkar/PizzaShop"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Source Code</a
+            ></span
+          ><br />
+          <span
+            >- Messaging application inspired by Telegram using Firebase as
+            backend.
+            <a
+              href="https://github.com/armanabkar/FlashChat"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Source Code</a
+            ></span
+          ><br />
+          <span
+            >- Dating application for anime characters built with Flutter
+            (SwiftUI and React Native versions are also available). Backend
+            built with Node.js.
+            <a
+              href="https://github.com/armanabkar/anime_dating_flutter"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Source Code</a
+            ></span
+          ><br />
+          <span
+            >- Instagram clone with basic features using Firebase as backend.
+            <a
+              href="https://github.com/armanabkar/InstagramClone"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Source Code</a
+            ></span
+          >
+        </p>
 
         <!-- Education -->
         <p>
@@ -125,15 +186,17 @@
           >
         </p>
 
+        <!-- Languages -->
+        <p>
+          <span class="prefix">Languages:</span><br />
+          <span>- English, German, Persian, Armenian</span>
+        </p>
+
         <!-- Contact -->
         <p class="p-without-margin"><span class="prefix">Contact:</span></p>
         <div class="contact-container">
-          <p class="p-without-margin">
-            <i class="bi bi-envelope-fill"></i> armanabkar@gmail.com
-          </p>
-          <p class="p-without-margin">
-            <i class="bi bi-geo-fill"></i> Isfahan, Iran
-          </p>
+          <p class="p-without-margin">✉️ armanabkar@gmail.com</p>
+          <p class="p-without-margin">🌴 San Diego, California</p>
         </div>
         <div class="social-media-icons">
           <p class="p-without-margin">
