@@ -2,6 +2,7 @@
 :after,
 :before {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 :root {
   --primary: #1d1d1f;
@@ -11,9 +12,9 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #f5f5f7;
-    --background: #1d1d1f;
-    --link: #2997ff;
+    --primary: #e8eaed;
+    --background: #202124;
+    --link: #8ab4f8;
   }
 }
 body {
@@ -36,9 +37,20 @@ h1 {
   font-size: 2em;
   color: var(--background);
   background-color: var(--primary);
-  border-radius: 1px;
+  border-radius: 4px;
   letter-spacing: 0.03rem;
   padding: 0.1em;
+}
+.header-description {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.who-am-i {
+  text-decoration: underline;
+}
+.header-description a {
+  margin-left: 0.5em;
 }
 svg {
   width: 1em;
@@ -82,8 +94,8 @@ a:hover {
   background-color: var(--primary);
   color: var(--background);
   letter-spacing: 0.03rem;
-  padding: 0.075em 0.1em;
-  border-radius: 1px;
+  padding: 0.075em 0.15em;
+  border-radius: 4px;
 }
 .experience-description {
   font-size: 0.95em;
@@ -101,7 +113,7 @@ a:hover {
   margin-top: 1em;
 }
 .social-media-link {
-  font-size: 1.25em;
+  font-size: 1.5em;
   color: var(--primary);
   margin: 0 0.2em;
 }
