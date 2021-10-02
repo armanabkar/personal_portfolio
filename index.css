@@ -39,7 +39,7 @@ h1 {
   background-color: var(--primary);
   border-radius: 4px;
   letter-spacing: 0.03rem;
-  padding: 0.1em;
+  padding: 4px 8px;
 }
 .header-description {
   display: flex;
@@ -48,9 +48,21 @@ h1 {
 }
 .who-am-i {
   text-decoration: underline;
+  letter-spacing: 0.03rem;
 }
 .header-description a {
+  color: var(--background);
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
   margin-left: 0.5em;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+.header-description a:hover {
+  color: var(--primary);
+  background-color: var(--background);
+  text-decoration: none;
 }
 svg {
   width: 1em;
@@ -83,6 +95,7 @@ a {
 }
 a:hover {
   color: var(--primary);
+  text-decoration: underline;
 }
 .container {
   margin: 0 auto;
@@ -94,8 +107,8 @@ a:hover {
   background-color: var(--primary);
   color: var(--background);
   letter-spacing: 0.03rem;
-  padding: 0.075em 0.15em;
   border-radius: 4px;
+  padding: 2px 4px;
 }
 .experience-description {
   font-size: 0.95em;
@@ -162,4 +175,5 @@ footer {
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary);
+  border-radius: 2px;
 }
