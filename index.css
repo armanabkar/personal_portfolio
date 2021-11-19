@@ -57,7 +57,6 @@ h1 {
   line-height: normal;
   font-family: var(--monoFont);
   font-weight: 500;
-  font-size: 1.2rem;
 }
 .header-description a {
   color: var(--primary);
@@ -84,6 +83,9 @@ p {
   line-height: 1.75em;
   margin: 1.1em 0;
   font-weight: 400;
+}
+.position {
+  color: var(--secondary);
 }
 .layout {
   display: flex;
@@ -142,10 +144,20 @@ a:hover {
   font-weight: bold;
   box-shadow: var(--shadow);
 }
+.fact {
+  box-shadow: var(--shadow);
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+  padding: 0.25em 0.5em;
+}
 .contact-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+#contact span:last-child {
+  color: var(--secondary);
 }
 .p-without-margin {
   margin: 0;
@@ -174,8 +186,7 @@ a:hover {
     display: block;
   }
   .mono-font,
-  .header-description,
-  .who-am-i {
+  .header-description {
     font-size: 1.05rem;
   }
   .motivational {
