@@ -145,11 +145,9 @@ a:hover {
   box-shadow: var(--shadow);
 }
 .fact {
-  box-shadow: var(--shadow);
-  border-radius: 4px;
-  text-align: center;
+  border-left: 3px solid var(--primary);
   font-weight: 500;
-  padding: 0.25em 0.5em;
+  padding-left: 0.5em;
 }
 .contact-container {
   display: flex;
