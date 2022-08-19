@@ -76,7 +76,7 @@ p {
   padding: 1em 0;
 }
 #about p,
-footer,
+footer div,
 h2 {
   margin: 0 auto;
   max-width: 58rem;
@@ -87,24 +87,28 @@ a {
   transition: color linear 0.15s;
   text-decoration: none;
 }
-.portfolio a {
-  color: var(--tertiary);
+.portfolio {
   background-color: var(--secondary);
+  color: var(--primary);
+}
+.portfolio p a {
+  color: var(--secondary);
+  background-color: var(--tertiary);
   border-radius: 5px;
   padding: 1px 3px;
   line-height: normal;
   display: inline-block;
   font-weight: 600;
 }
-.portfolio a:hover {
+.portfolio p a:hover {
   color: var(--secondary);
-  background-color: var(--tertiary);
+  background-color: var(--primary);
 }
 .social-media-icons {
   margin: 1.5em 0 0 0;
 }
 .social-media-link {
-  color: var(--primary);
+  color: var(--secondary);
   margin-right: 0.25em;
 }
 .social-media-link:first-of-type {
@@ -127,14 +131,16 @@ a {
   p {
     font-size: 1.2rem;
   }
-  .portfolio a {
+  .portfolio p a {
     margin: 3px 1px;
   }
 }
 footer {
+  color: var(--secondary);
+  background-color: var(--primary);
   font-size: 1.15em;
   letter-spacing: 0.1rem;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
 }
 ::-moz-selection {
   color: var(--primary);
@@ -153,4 +159,22 @@ footer {
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--tertiary);
+}
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
