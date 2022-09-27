@@ -73,7 +73,6 @@ p {
 #about {
   background-color: var(--tertiary);
   color: var(--secondary);
-  padding: 1em 0;
 }
 #about p,
 footer div,
@@ -86,6 +85,9 @@ a {
   color: var(--tertiary);
   transition: color linear 0.15s;
   text-decoration: none;
+}
+.section {
+  padding: 0.5em 0;
 }
 .portfolio {
   background-color: var(--secondary);
@@ -110,9 +112,6 @@ a {
 .social-media-link {
   color: var(--secondary);
   margin-right: 0.25em;
-}
-.social-media-link:first-of-type {
-  color: var(--tertiary);
 }
 .social-media-link:hover {
   color: var(--tertiary);
@@ -168,7 +167,7 @@ footer {
   opacity: 1;
 }
 .active.fade-left {
-  animation: fade-left 1s ease-in;
+  animation: fade-left 0.75s ease-in;
 }
 @keyframes fade-left {
   0% {
