@@ -16,9 +16,9 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: var(--primary);
-  background-color: var(--secondary);
+  background-color: var(--primary);
   scrollbar-width: thin;
-  scrollbar-color: var(--tertiary) var(--secondary);
+  scrollbar-color: var(--primary) var(--secondary);
   text-align: justify;
   text-justify: inter-word;
 }
@@ -29,13 +29,14 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-bottom: 5em;
+  padding-bottom: 7em;
   flex-direction: column;
-  background-color: var(--background);
+  background-color: var(--secondary);
   background-image: url(background.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -45,25 +46,46 @@ h1 {
   font-weight: 600;
   line-height: 1;
   font-size: 5em;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
-header p {
+.title {
   font-size: 2.5em;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 1.5rem;
+  padding: 0;
   line-height: normal;
 }
 .aboutBtn {
   font-weight: bold;
-  font-size: 1.25rem;
   border: 2px solid var(--tertiary);
   border-radius: 5px;
-  padding: 0 0.25em;
+  padding: 0.2em;
+  line-height: normal;
+  margin: 1em 0 0 0;
 }
 .aboutBtn:hover {
   color: white;
   background-color: var(--tertiary);
+}
+.tags {
+  position: absolute;
+  top: 0;
+  background-color: var(--primary);
+  width: 100%;
+}
+.tags div {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 58rem;
+  padding: 0 1.25rem;
+}
+.tags p {
+  color: var(--secondary);
+  font-size: 1em;
+  line-height: normal;
+  font-weight: 700;
+  margin: 0.5em 0;
 }
 p {
   font-size: 1.3rem;
@@ -76,7 +98,8 @@ p {
 }
 #about p,
 footer div,
-h2 {
+h2,
+.baraye {
   margin: 0 auto;
   max-width: 58rem;
   padding: 0.5em 1.25rem;
@@ -116,11 +139,17 @@ a {
 .social-media-link:hover {
   color: var(--tertiary);
 }
+.baraye-copyright,
+.baraye-copyright a {
+  color: var(--secondary);
+  font-size: 10px;
+  font-weight: 100;
+}
 @media (max-width: 768px) {
   h1 {
     font-size: 3.5em;
   }
-  header p {
+  .title {
     font-size: 2rem;
   }
   body {
@@ -157,7 +186,7 @@ footer {
   background: var(--secondary);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--tertiary);
+  background-color: var(--primary);
 }
 .reveal {
   position: relative;
