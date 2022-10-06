@@ -10,7 +10,6 @@
   --tertiary: #1a56a6;
 }
 body {
-  background-color: var(--secondary);
   margin: 0;
   font-family: sans-serif;
   font-size: 16px;
@@ -29,7 +28,6 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-bottom: 7em;
   flex-direction: column;
   background-color: var(--secondary);
   background-image: url(background.svg);
@@ -40,13 +38,14 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding: 0 1.25rem 5em 1.25rem;
 }
 h1 {
   color: var(--tertiary);
   font-weight: 600;
-  line-height: 1;
+  line-height: normal;
   font-size: 5em;
-  margin-bottom: 0;
+  margin: 0;
 }
 .title {
   font-size: 2.5em;
@@ -147,10 +146,10 @@ a {
 }
 @media (max-width: 768px) {
   h1 {
-    font-size: 3.5em;
+    font-size: 3.3em;
   }
   .title {
-    font-size: 2rem;
+    font-size: 1.9em;
   }
   body {
     font-size: 14px;
@@ -195,14 +194,27 @@ footer {
 .reveal.active {
   opacity: 1;
 }
-.active.fade-left {
-  animation: fade-left 0.75s ease-in;
+.active.fade {
+  animation: fade 1s ease-in;
 }
-@keyframes fade-left {
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+@keyframes fade {
   0% {
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
     opacity: 1;
   }
 }
