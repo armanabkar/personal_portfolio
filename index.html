@@ -21,20 +21,19 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
     <link rel="apple-touch-icon" href="/favicon.png" />
-    <script src="./index.js"></script>
   </head>
   <body>
     <header id="armanabkar">
       <div class="tags">
-        <div class="active fade">
+        <div>
           <p>#MahsaAmini</p>
           <p>مهسا_امینی#</p>
         </div>
       </div>
       <h1>Arman Abkar</h1>
       <h2 class="title">Software Developer</h2>
-      <p class="aboutBtn active fade">
-        <a href="#about">Know more</a>
+      <p>
+        <a class="aboutBtn" href="#about">Know more</a>
       </p>
     </header>
 
@@ -102,40 +101,15 @@
           further information, feel free to contact me at
           <strong>armanabkar@gmail.com</strong>.
         </p>
-        <div class="baraye reveal fade">
-          <iframe
-            title="A music from Shervin Hajipour about the Iranian people"
-            width="100%"
-            height="166"
-            scrolling="no"
-            frameborder="no"
-            allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1352980213&color=%231a56a6&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-          ></iframe>
-          <div class="baraye-copyright">
-            <a
-              href="https://soundcloud.com/shervinine"
-              title="Shervin Hajipour"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Shervin Hajipour</a
-            >
-            ·
-            <a
-              href="https://soundcloud.com/shervinine/baraye"
-              title="Baraye"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Baraye</a
-            >
-            <br />
-            <span>Women, Life, Freedom</span>
-            <br />
-            <span
-              >For Iranian women who inspire the world with their bravery</span
-            >
-          </div>
-        </div>
+        <p class="reveal fade">
+          <a
+            class="baraye"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://youtu.be/BGesf7QcREk"
+            >Shervin - Baraye</a
+          >, For Iranian women who inspire the world with their bravery.
+        </p>
       </div>
     </div>
 
@@ -232,4 +206,21 @@
       </div>
     </footer>
   </body>
+  <script>
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 100;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", reveal);
+  </script>
 </html>

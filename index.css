@@ -30,14 +30,6 @@ header {
   text-align: center;
   flex-direction: column;
   background-color: var(--secondary);
-  background-image: url(background.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   padding: 0 1.25rem 5em 1.25rem;
 }
 h1 {
@@ -63,8 +55,8 @@ h1 {
   margin: 1em 0 0 0;
 }
 .aboutBtn:hover {
-  color: white;
   background-color: var(--tertiary);
+  color: var(--secondary);
 }
 .tags {
   position: absolute;
@@ -97,8 +89,7 @@ p {
 }
 #about p,
 footer div,
-h2,
-.baraye {
+h2 {
   margin: 0 auto;
   max-width: 58rem;
   padding: 0.5em 1.25rem;
@@ -107,6 +98,19 @@ a {
   color: var(--tertiary);
   transition: color linear 0.15s;
   text-decoration: none;
+}
+.baraye {
+  color: var(--tertiary);
+  background-color: var(--secondary);
+  border-radius: 5px;
+  padding: 1px 3px;
+  line-height: normal;
+  display: inline-block;
+  font-weight: 600;
+}
+.baraye:hover {
+  color: var(--secondary);
+  background-color: var(--tertiary);
 }
 .section {
   padding: 0.5em 0;
@@ -137,12 +141,6 @@ a {
 }
 .social-media-link:hover {
   color: var(--tertiary);
-}
-.baraye-copyright,
-.baraye-copyright a {
-  color: var(--secondary);
-  font-size: 10px;
-  font-weight: 100;
 }
 @media (max-width: 768px) {
   h1 {
