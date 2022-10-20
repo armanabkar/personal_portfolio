@@ -9,134 +9,69 @@
   --secondary: #efeff4;
   --tertiary: #1a56a6;
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #cfd2d6;
+    --secondary: #202124;
+  }
+}
 body {
   margin: 0;
   font-family: sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: var(--primary);
-  background-color: var(--primary);
+  background-color: var(--secondary);
   scrollbar-width: thin;
   scrollbar-color: var(--primary) var(--secondary);
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: center;
 }
 header {
-  min-height: 100vh;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
   background-color: var(--secondary);
-  padding: 0 1.25rem 5em 1.25rem;
+  margin: 1.5em 0;
 }
 h1 {
   color: var(--tertiary);
   font-weight: 600;
   line-height: normal;
-  font-size: 5em;
-  margin: 0;
-}
-.title {
-  font-size: 2.5em;
-  font-weight: 400;
+  font-size: 4em;
   margin: 0;
   padding: 0;
+}
+h2 {
   line-height: normal;
-}
-.aboutBtn {
-  font-weight: bold;
-  border: 2px solid var(--tertiary);
-  border-radius: 5px;
-  padding: 0.2em;
-  line-height: normal;
-  margin: 1em 0 0 0;
-}
-.aboutBtn:hover {
-  background-color: var(--tertiary);
-  color: var(--secondary);
-}
-.tags {
-  position: absolute;
-  top: 0;
-  background-color: var(--primary);
-  width: 100%;
-}
-.tags div {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  max-width: 58rem;
-  padding: 0 1.25rem;
-}
-.tags p {
-  color: var(--secondary);
-  font-size: 1em;
-  line-height: normal;
-  font-weight: 700;
-  margin: 0.5em 0;
+  font-size: 2em;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
 }
 p {
   font-size: 1.3rem;
   line-height: 1.75em;
   font-weight: 400;
 }
-#about {
-  background-color: var(--tertiary);
-  color: var(--secondary);
+.iran {
+  font-size: 14px;
+  line-height: 1.2;
+  margin-top: 0.5em;
 }
-#about p,
-footer div,
-h2 {
+.main {
+  margin: 1em 0;
+}
+.main p {
   margin: 0 auto;
-  max-width: 58rem;
+  max-width: 48rem;
   padding: 0.5em 1.25rem;
 }
 a {
-  color: var(--tertiary);
   transition: color linear 0.15s;
   text-decoration: none;
 }
-.baraye {
-  color: var(--tertiary);
-  background-color: var(--secondary);
-  border-radius: 5px;
-  padding: 1px 3px;
-  line-height: normal;
-  display: inline-block;
-  font-weight: 600;
-}
-.baraye:hover {
-  color: var(--secondary);
-  background-color: var(--tertiary);
-}
-.section {
-  padding: 0.5em 0;
-}
-.portfolio {
-  background-color: var(--secondary);
-  color: var(--primary);
-}
-.portfolio p a {
-  color: var(--secondary);
-  background-color: var(--tertiary);
-  border-radius: 5px;
-  padding: 1px 3px;
-  line-height: normal;
-  display: inline-block;
-  font-weight: 600;
-}
-.portfolio p a:hover {
-  color: var(--secondary);
-  background-color: var(--primary);
-}
 .social-media-icons {
-  margin: 1.5em 0 0 0;
+  margin: 0;
 }
 .social-media-link {
-  color: var(--secondary);
+  color: var(--primary);
   margin-right: 0.25em;
 }
 .social-media-link:hover {
@@ -144,36 +79,30 @@ a {
 }
 @media (max-width: 768px) {
   h1 {
-    font-size: 3.3em;
+    font-size: 3.2em;
   }
-  .title {
-    font-size: 1.9em;
+  h2 {
+    font-size: 1.8em;
   }
   body {
     font-size: 14px;
-    text-align: center;
   }
   p {
     font-size: 1.2rem;
   }
-  .portfolio p a {
-    margin: 3px 1px;
-  }
 }
 footer {
-  color: var(--secondary);
-  background-color: var(--primary);
   font-size: 1.15em;
   letter-spacing: 0.1rem;
-  padding-bottom: 0.5em;
+  padding: 0.5em 0 1em 0;
 }
 ::-moz-selection {
-  color: var(--primary);
-  background: var(--secondary);
+  color: var(--secondary);
+  background: var(--primary);
 }
 ::selection {
-  color: var(--primary);
-  background: var(--secondary);
+  color: var(--secondary);
+  background: var(--primary);
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -184,35 +113,4 @@ footer {
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary);
-}
-.reveal {
-  position: relative;
-  opacity: 0;
-}
-.reveal.active {
-  opacity: 1;
-}
-.active.fade {
-  animation: fade 1s ease-in;
-}
-.active.fade-left {
-  animation: fade-left 1s ease-in;
-}
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-left {
-  0% {
-    transform: translateX(-30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
