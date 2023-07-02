@@ -8,55 +8,33 @@
   --primary: #010001;
   --secondary: #97aca1;
 }
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --primary: #cfd2d6;
-    --secondary: #202124;
+    --primary: #95aba0;
+    --secondary: #000000;
   }
-} */
+}
 body {
   margin: 0;
-  font-family: sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-family: "Oswald", sans-serif;
   color: var(--primary);
   background-color: var(--secondary);
-  scrollbar-width: thin;
-  scrollbar-color: var(--primary) var(--secondary);
   text-align: center;
-}
-header {
-  background-color: var(--secondary);
-  margin: 1.5em 0;
 }
 h1 {
   color: var(--primary);
-  font-weight: 600;
-  line-height: normal;
-  font-size: 4em;
-  margin: 0;
+  font-size: 5em;
+  margin: 1.5rem 0 0 0;
   padding: 0;
+  line-height: 1.2;
 }
 h2 {
-  line-height: normal;
-  font-size: 2em;
-  font-weight: 600;
-  padding: 0;
-  margin: 0;
+  margin-top: 0;
+  font-size: 1.75rem;
 }
 p {
-  font-size: 1.3rem;
-  line-height: 1.75em;
-  font-weight: 400;
-}
-.main {
-  margin: 1em 0;
-  text-align: left;
-}
-.main p {
-  margin: 0 auto;
-  max-width: 50rem;
-  padding: 0.5em 1.25rem;
+  font-size: 11px;
+  font-family: "Almarai", sans-serif;
 }
 a {
   color: var(--primary);
@@ -66,30 +44,19 @@ a {
 p a {
   text-decoration: underline;
 }
-.social-media-icons {
-  margin: 1.5em 0 0 0;
-}
 .social-media-link {
   margin-right: 0.5em;
 }
 @media (max-width: 768px) {
   h1 {
-    font-size: 2.8em;
+    font-size: 3.2em;
   }
   h2 {
-    font-size: 1.8em;
-  }
-  body {
-    font-size: 14px;
+    font-size: 1.5rem;
   }
   p {
-    font-size: 1.2rem;
+    font-size: 9px;
   }
-}
-footer {
-  font-size: 1.15em;
-  letter-spacing: 0.1rem;
-  padding: 0.5em 0 1em 0;
 }
 ::-moz-selection {
   color: var(--secondary);
@@ -98,14 +65,4 @@ footer {
 ::selection {
   color: var(--secondary);
   background: var(--primary);
-}
-::-webkit-scrollbar {
-  width: 10px;
-  overflow: auto;
-}
-::-webkit-scrollbar-track {
-  background: var(--secondary);
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
 }
