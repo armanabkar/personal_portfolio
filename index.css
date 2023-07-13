@@ -20,21 +20,17 @@ body {
   color: var(--primary);
   background-color: var(--secondary);
   text-align: center;
+  line-height: 1.2;
 }
 h1 {
   color: var(--primary);
-  font-size: 5em;
-  margin: 1.5rem 0 0 0;
+  font-size: 6em;
+  margin: 2.5rem 0 0 0;
   padding: 0;
-  line-height: 1.2;
 }
 h2 {
   margin-top: 0;
-  font-size: 1.75rem;
-}
-p {
-  font-size: 11px;
-  font-family: "Almarai", sans-serif;
+  font-size: 2.7rem;
 }
 a {
   color: var(--primary);
@@ -53,9 +49,6 @@ p a {
   }
   h2 {
     font-size: 1.5rem;
-  }
-  p {
-    font-size: 9px;
   }
 }
 ::-moz-selection {
