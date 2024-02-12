@@ -5,12 +5,12 @@
   scroll-behavior: smooth;
 }
 :root {
-  --primary: #010001;
-  --secondary: #97aca1;
+  --primary: #000000;
+  --secondary: #97ac9f;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #95aba0;
+    --primary: #97ac9f;
     --secondary: #000000;
   }
 }
@@ -21,6 +21,8 @@ body {
   background-color: var(--secondary);
   text-align: center;
   line-height: 1.2;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--secondary);
 }
 h1 {
   color: var(--primary);
@@ -37,15 +39,30 @@ a {
   transition: color linear 0.15s;
   text-decoration: none;
 }
+.main {
+  margin: 1em 0;
+  text-align: left;
+}
+.main p {
+  font-size: 1.5rem;
+  line-height: 1.75em;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 0.5em 1.25rem;
+}
 .social-media-link {
   margin-right: 0.5em;
 }
 @media (max-width: 768px) {
   h1 {
-    font-size: 3.2em;
+    font-size: 3em;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+  .main p {
+    font-size: 1.3rem;
   }
 }
 ::-moz-selection {
@@ -55,4 +72,14 @@ a {
 ::selection {
   color: var(--secondary);
   background: var(--primary);
+}
+::-webkit-scrollbar {
+  width: 10px;
+  overflow: auto;
+}
+::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
 }
