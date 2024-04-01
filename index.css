@@ -26,46 +26,30 @@ body {
 }
 h1 {
   color: var(--primary);
-  font-size: 5em;
-  margin: 2rem 0 0 0;
+  font-size: 5.5em;
+  margin: 2rem 0;
   padding: 0;
-}
-h2 {
-  margin-top: 0;
-  font-size: 2.7rem;
 }
 a {
   color: var(--primary);
   transition: color linear 0.15s;
   text-decoration: none;
 }
-.main {
-  margin: 1em 0;
-  text-align: left;
-}
-.main p {
-  font-size: 1.5rem;
-  line-height: 1.75em;
-  font-weight: 400;
-  margin: 0 auto;
-  max-width: 50rem;
-  padding: 0.5em 1.25rem;
-}
 .social-media-link {
   margin-right: 0.5em;
 }
-footer {
-  margin: 2rem 0 1.5rem 0;
+.social-media-icon {
+  width: 48;
+  height: 48;
 }
 @media (max-width: 768px) {
   h1 {
     font-size: 2.5em;
+    margin-bottom: 1rem;
   }
-  h2 {
-    font-size: 1.4rem;
-  }
-  .main p {
-    font-size: 1.3rem;
+  .social-media-icon {
+    width: 32;
+    height: 32;
   }
 }
 ::-moz-selection {
