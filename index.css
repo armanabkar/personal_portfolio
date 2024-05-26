@@ -14,6 +14,14 @@
     --secondary: #000000;
   }
 } */
+@font-face {
+  font-display: swap;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/oswald-v53-latin-600.woff2") format("woff2"),
+    url("./fonts/oswald-v53-latin-600.ttf") format("truetype");
+}
 body {
   margin: 0;
   font-family: Oswald, sans-serif;
@@ -77,22 +85,16 @@ footer p {
   color: var(--primary);
   background-color: var(--secondary);
 }
-.reveal {
-  position: relative;
-  opacity: 0;
-}
-.reveal.active {
-  opacity: 1;
-}
-.active.fade {
-  animation: fade 1s ease-in;
-}
-@keyframes fade {
-  0% {
-    opacity: 0;
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 4em;
   }
-  100% {
-    opacity: 1;
+  .social-media-icon {
+    width: 40;
+    height: 40;
+  }
+  .main p {
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 768px) {
@@ -108,12 +110,12 @@ footer p {
   }
 }
 ::-moz-selection {
-  color: var(--secondary);
-  background: var(--primary);
+  color: var(--primary);
+  background: var(--secondary);
 }
 ::selection {
-  color: var(--secondary);
-  background: var(--primary);
+  color: var(--primary);
+  background: var(--secondary);
 }
 ::-webkit-scrollbar {
   width: 10px;
