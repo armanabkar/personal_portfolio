@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /fonts/
+Disallow: /images/
+Disallow: /css/
+Disallow: /js/
+
+Sitemap: https://www.armanabkar.com/sitemap.xml
