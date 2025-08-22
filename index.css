@@ -48,6 +48,7 @@ header {
   padding: 0 1.25rem 5em 1.25rem;
 }
 h1 {
+  white-space: nowrap;
   color: var(--primary);
   letter-spacing: 2px;
   font-size: 6em;
@@ -57,10 +58,29 @@ h1 {
 }
 h2 {
   color: var(--secondary);
-  font-size: 2.25em;
-  margin: 0 0 1.25rem 0;
+  font-size: 1.75em;
+  margin: 0;
   text-transform: uppercase;
   font-family: Audiowide, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.logo-wrapper {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+.logo-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 0 1.25rem 0;
+}
+.line {
+  height: 2px;
+  background: var(--secondary);
+  flex-grow: 1;
 }
 a {
   color: var(--text);
@@ -118,7 +138,7 @@ footer p {
     font-size: 5em;
   }
   h2 {
-    font-size: 1.85em;
+    font-size: 1.5em;
   }
   .social-media-icon {
     width: 40;
@@ -127,13 +147,16 @@ footer p {
   main p {
     font-size: 1.4rem;
   }
+  .logo-subtitle {
+    gap: 10px;
+  }
 }
 @media (max-width: 768px) {
   h1 {
     font-size: 2.5em;
   }
   h2 {
-    font-size: 1em;
+    font-size: 0.75em;
   }
   .social-media-icon {
     width: 32;
@@ -141,6 +164,9 @@ footer p {
   }
   main p {
     font-size: 1.3rem;
+  }
+  .logo-subtitle {
+    gap: 8px;
   }
 }
 ::-moz-selection {
