@@ -81,6 +81,7 @@ h2 {
   height: 2px;
   background: var(--secondary);
   flex-grow: 1;
+  border-radius: 8px;
 }
 a {
   color: var(--text);
@@ -104,6 +105,17 @@ main p {
   text-transform: uppercase;
   font-family: Anton;
   letter-spacing: 1px;
+}
+.more-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 0 0;
+}
+.more-line {
+  background: var(--primary);
 }
 .social-media-link {
   margin-right: 0.75em;
@@ -132,6 +144,19 @@ footer p {
   padding: 1rem;
   font-size: 1.2rem;
   font-family: Roboto, sans-serif;
+}
+.footer-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.25rem;
+}
+.footer-line {
+  background: var(--text);
+}
+footer {
+  max-width: 50rem;
+  margin: 1em auto 0 auto;
 }
 @media (max-width: 1200px) {
   h1 {
