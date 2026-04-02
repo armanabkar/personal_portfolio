@@ -100,6 +100,10 @@ main p {
   max-width: 50rem;
   padding: 0.5em 1.25rem;
 }
+.highlight {
+  color: var(--secondary);
+  font-family: monospace;
+}
 .more-header {
   color: var(--primary);
   text-transform: uppercase;
@@ -139,11 +143,22 @@ main p {
   text-transform: uppercase;
   font-family: Audiowide, Arial, Helvetica, sans-serif;
 }
+.email {
+  font-family: monospace;
+  background: var(--text);
+  color: var(--background);
+  border-radius: 4px;
+  padding: 1px 2px;
+}
 footer p {
   margin: 0;
   padding: 1rem;
   font-size: 1.2rem;
   font-family: Roboto, sans-serif;
+  font-weight: bold;
+}
+footer a {
+  color: var(--primary);
 }
 .footer-subtitle {
   display: flex;
@@ -152,7 +167,7 @@ footer p {
   padding: 0 1.25rem;
 }
 .footer-line {
-  background: var(--text);
+  background: var(--primary);
 }
 footer {
   max-width: 50rem;
