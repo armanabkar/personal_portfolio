@@ -55,6 +55,8 @@ h1 {
   margin: 2rem 0 0 0;
   text-transform: uppercase;
   font-family: Anton, Arial, Helvetica, sans-serif;
+  text-decoration: overline;
+  text-decoration-thickness: 4px;
 }
 h2 {
   color: var(--secondary);
@@ -102,12 +104,12 @@ main p {
 }
 .highlight {
   color: var(--secondary);
-  font-family: monospace;
+  font-family: Audiowide, Arial, Helvetica, sans-serif;
 }
 .more-header {
   color: var(--primary);
   text-transform: uppercase;
-  font-family: Anton;
+  font-family: Anton, Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
 }
 .more-subtitle {
@@ -144,18 +146,22 @@ main p {
   font-family: Audiowide, Arial, Helvetica, sans-serif;
 }
 .email {
-  font-family: monospace;
+  font-family: Audiowide, Arial, Helvetica, sans-serif;
   background: var(--text);
   color: var(--background);
   border-radius: 4px;
   padding: 1px 2px;
 }
+.email:hover {
+  background-color: transparent;
+  color: var(--text);
+  border: 1px solid var(--text);
+}
 footer p {
   margin: 0;
   padding: 1rem;
-  font-size: 1.2rem;
-  font-family: Roboto, sans-serif;
-  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: Audiowide, Arial, Helvetica, sans-serif;
 }
 footer a {
   color: var(--primary);
@@ -207,6 +213,9 @@ footer {
   }
   .logo-subtitle {
     gap: 8px;
+  }
+  footer p {
+    font-size: 1rem;
   }
 }
 ::-moz-selection {
