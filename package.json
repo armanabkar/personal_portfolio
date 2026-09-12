@@ -1,10 +1,10 @@
 {
   "name": "personal_portfolio",
-  "version": "7.3.1",
+  "version": "7.4.0",
   "source": "index.html",
   "description": "Personal portfolio website for Arman Abkar",
   "repository": "https://github.com/armanabkar/personal_portfolio",
-  "homepage": "https://www.armanabkar.com",
+  "homepage": "https://armanabkar.com",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"

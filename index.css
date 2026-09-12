@@ -1,8 +1,7 @@
 *,
-:after,
-:before {
+*::before,
+*::after {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 :root {
   --primary: #fb042d;
@@ -13,20 +12,20 @@
 @font-face {
   font-display: swap;
   font-family: "Anton";
-  src: url("./fonts/Anton.woff2") format("woff2"),
-    url("./fonts/Anton.ttf") format("truetype");
+  src: url("./fonts/Anton.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Audiowide";
-  src: url("./fonts/Audiowide.woff2") format("woff2"),
-    url("./fonts/Audiowide.ttf") format("truetype");
+  src: url("./fonts/Audiowide.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Roboto";
-  src: url("./fonts/Roboto.woff2") format("woff2"),
-    url("./fonts/Roboto.ttf") format("truetype");
+  src: url("./fonts/Roboto.woff2") format("woff2");
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -97,7 +96,7 @@ main {
 }
 main p {
   font-size: 1.5rem;
-  line-height: 1.75em;
+  line-height: 1.75;
   margin: 0 auto;
   max-width: 50rem;
   padding: 0.5em 1.25rem;
@@ -123,8 +122,13 @@ main p {
 .more-line {
   background: var(--primary);
 }
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .social-media-link {
-  margin-right: 0.75em;
+  display: flex;
 }
 .social-media-icon {
   width: 48;
